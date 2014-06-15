@@ -1,0 +1,183 @@
+html {
+  margin: 0;
+  padding: 0;
+  font-size: 10px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 300;
+}
+
+body {
+  zoom: 1;
+  margin: 10px auto;
+  background-color: #FAFAFA;
+  color: #333222;
+  font-size: 2.1rem;
+  line-height: 1.5em;
+  padding-left: 5rem;
+  text-rendering: optimizelegibility;
+  width: 750px;
+}
+
+a {
+  text-decoration: none;
+}
+
+em {
+  color: #676545;
+  letter-spacing: 2px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: #336699;
+  text-shadow: 0.06em 0.06em 0.05em #D9E6F2;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: normal;
+
+  line-height: 40px;
+
+  letter-spacing: -1px;
+}
+h2:after {
+  background-color: #A7A47A;
+  content: "";
+  display: block;
+  height: 1px;
+  margin: 10px auto 0;
+  width: 100%;
+}
+
+a:link,
+a:visited {
+  border-bottom: 1px dotted #A7A47A;
+  color: #A7A47A;
+  text-decoration: none;
+  transition: all 0.2s ease-in 0s;
+
+
+}
+
+a:hover {
+  color: #f90;
+  border-bottom: 1px solid #f90;
+}
+
+p {
+  margin: 20px 0;
+}
+
+ul, ol {
+  padding-left: 1em;
+}
+
+ul li {
+  list-style-type: none;
+  text-indent: -0.7em;
+  margin-bottom: .67em;
+}
+ul li:before {
+  content: "–";
+  font-size: small;
+  margin-right: .8rem;
+  color: #a7a47a;
+}
+
+li p {
+  display: inline;
+}
+
+hr {
+  border-top: 1px dotted #A7A47A;
+  border-bottom: 0px;
+  width: 90%;
+}
+
+.head p {
+  display: inline-block;
+  width: 31em;
+  vertical-align: top;
+  margin: 25px 0;
+  font-size: 1.8rem;
+  line-height: 1.5em;
+  text-transform: uppercase;
+}
+
+.head img {
+  display: inline-block;
+}
+
+.head a {
+  border: none;
+  display: inline-block;
+}
+.head a.download {
+  position: absolute;  
+  padding: 2px 0 0 10px;
+}
+
+.portrait {
+  height: 160px;
+  display: inline-block;
+  margin-right: 20px;
+}
+img.links {
+  height: 30px;
+  opacity: 0.7;
+  transition: opacity 0.2s ease-in 0s;
+}
+img.links:hover{
+  opacity: 1
+}
+
+@media all and (max-width: 900px) and (min-width: 600px) {
+  body {
+    width: initial;
+    padding-left: 2rem;
+    margin-right: 1.6rem;
+    font-size: 1.8rem;
+  }
+  .head p {
+    font-size: 1.4rem;
+    margin: 26px 0;
+    width: 26em;
+  }
+  .portrait {
+    height: 150px;
+  }
+}
+@media all and (max-width: 600px) {
+  html {
+    font-weight: normal;
+  }
+  body {
+    width: initial;
+    padding-left: 1rem;
+    margin-right: 1rem;
+    font-size: 1.4rem;
+  }
+  .head p {
+    font-size: 1.2rem;
+    margin: 15px 0;
+    width: 13em;
+  }
+  .portrait {
+    height: 120px;
+  }
+}
+
+@media print {
+  body {
+    background-color: white;
+  }
+  a.no_pdf{
+    display: none;
+  }
+  em{
+    letter-spacing: normal;
+  }
+}
